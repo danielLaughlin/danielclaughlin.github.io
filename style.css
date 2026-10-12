@@ -159,3 +159,16 @@ pre { background: var(--surface); border: 1px solid var(--line); border-radius: 
 .funder-logo { width: 3.5rem; height: 3.5rem; object-fit: contain; background: #fff; padding: .3rem; border-radius: 4px; margin-top: .2rem; }
 span.funder-logo { background: none; }
 @media (max-width: 480px) { .project { grid-template-columns: 2.75rem 1fr; gap: .8rem; } .funder-logo { width: 2.75rem; height: 2.75rem; } }
+
+/* Welcome page mission statement box */
+.mission {
+  max-width: none;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3.5vw, 2.25rem);
+  font-size: clamp(1.3rem, 2.6vw, 1.75rem);
+  line-height: 1.4;
+  margin: 0 0 3rem;
+}
