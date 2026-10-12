@@ -172,3 +172,10 @@ span.funder-logo { background: none; }
   line-height: 1.4;
   margin: 0 0 3rem;
 }
+
+/* Hanging indent for citations (Publications and former lab members) */
+.pubs li, .alum li {
+  padding-left: 1.75em;
+  text-indent: -1.75em;
+}
+.pubs { gap: 1rem; }
