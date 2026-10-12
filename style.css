@@ -93,8 +93,6 @@ audio { width: 100%; max-width: 30rem; margin-top: .6rem; height: 2.4rem; }
 .figure img { border-radius: 4px; }
 
 /* Publications */
-.books-row { display: flex; gap: 1.5rem; margin: 1.5rem 0; }
-.books-row img { width: 9rem; border-radius: 2px; }
 .search { display: block; font-family: var(--sans); font-size: .9rem; color: var(--muted); margin: 1.5rem 0 1rem; }
 .search span { display: block; margin-bottom: .4rem; }
 .search input {
@@ -179,3 +177,19 @@ span.funder-logo { background: none; }
   text-indent: -1.75em;
 }
 .pubs { gap: 1rem; }
+
+/* Publications: book cards */
+.books { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1.25rem; margin: 1.25rem 0 0; }
+.book-card {
+  display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.25rem; align-items: start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1.25rem;
+}
+.book-cover img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 3px; box-shadow: 0 6px 18px rgba(0,0,0,.35); transition: transform .2s ease; }
+.book-cover:hover img { transform: translateY(-3px); }
+.book-info p { margin: 0; }
+.book-title { font-size: 1.15rem; line-height: 1.35; margin-bottom: .6rem !important; }
+.book-title a { color: var(--ink); text-decoration: none; }
+.book-title a:hover { color: var(--accent); text-decoration: underline; }
+.book-meta { font-family: var(--sans); font-size: .9rem; color: var(--muted); line-height: 1.5; }
+.book-meta b { color: var(--ink); font-weight: 600; }
+@media (max-width: 420px) { .book-card { grid-template-columns: 5.5rem 1fr; gap: 1rem; padding: 1rem; } }
